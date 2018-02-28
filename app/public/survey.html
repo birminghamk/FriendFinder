@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <title>FriendFinder - Express</title>
   <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -16,7 +18,8 @@
 		<div class="page-header">
  			 <h1>Survey Questions</h1>
 		</div>
-
+    
+    <hr>
 
 		<div class="panel panel-default">
           <div class="panel-heading">
@@ -32,52 +35,288 @@
 
               <div class="form-group">
                 <label for="name">Link to Photo Image(Required)</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" id="photo">
 
               </div>
             </form>
            </div>
           </div>
+    <hr>
 
-          <div class="row">
+    <div class="row">
 			 <div class="col-lg-12">
 				<h2><strong>Question 1</strong></h2>
+
 					<h3>You rarely do something just out of sheer curiosity.</h3>
 
-				<h2><strong>Question 2</strong></h2>
-					<h3>People can rarely upset you.</h3>
-				<h2><strong>Question 3</strong></h2>
-					<h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
-				<h2><strong>Question 4</strong></h2>
-					<h3>Generally speaking, you rely more on your experience than your imagination</h3>
-				<h2><strong>Question 5</strong></h2>
-					<h3>You find it easy to stay relaxed and focused even when there is some pressure</h3>
-				<h2><strong>Question 6</strong></h2>
-					<h3>You rarely do something just out of sheer curiosity.</h3>
-				<h2><strong>Question 7</strong></h2>
-					<h3>It is often difficult for you to relate to other people’s feelings</h3>
-				<h2><strong>Question 8</strong></h2>
-					<h3>In a discussion, truth should be more important than people’s sensitivities</h3>
-				<h2><strong>Question 9</strong></h2>
-					<h3>You rarely get carried away by fantasies and ideas.</h3>
-				<h2><strong>Question 10</strong></h2>
-					<h3>You feel more energetic after spending time with a group of people.</h3>
-
-				<button type="submit" class="btn btn-default">Submit</button>
-			 </div>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="q1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Answer
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li value="1"><a href ="#">1 (Strongly Disagree)</a></li>
+              <li value="2"><a href="#">2</a></li>
+              <li value="3"><a href="#">3</a></li>
+              <li value="4"><a href="#">4</a></li>
+              <li value="5"><a href="#">5 (Strongly Agree)</a></li>
+            </ul>
           </div>
 
-          <div class="row">
+				<h2><strong>Question 2</strong></h2>
 
-     		 <div class="col-lg-3">
-            
-            <p> <a href = "http://localhost:3000/api/friends">API Friends List</a> | <a href ="https://github.com/birminghamk/FriendFinder">GitHub Repo</a>
+					<h3>People can rarely upset you.</h3>
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="q2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Answer
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li value="1"><a href ="#">1 (Strongly Disagree)</a></li>
+              <li value="2"><a href="#">2</a></li>
+              <li value="3"><a href="#">3</a></li>
+              <li value="4"><a href="#">4</a></li>
+              <li value="5"><a href="#">5 (Strongly Agree)</a></li>
+            </ul>
+          </div>
+
+				<h2><strong>Question 3</strong></h2>
+
+					<h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
+          
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="q3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Answer
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li value="1"><a href ="#">1 (Strongly Disagree)</a></li>
+              <li value="2"><a href="#">2</a></li>
+              <li value="3"><a href="#">3</a></li>
+              <li value="4"><a href="#">4</a></li>
+              <li value="5"><a href="#">5 (Strongly Agree)</a></li>
+            </ul>
+          </div>
+
+				<h2><strong>Question 4</strong></h2>
+
+					<h3>Generally speaking, you rely more on your experience than your imagination</h3>
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="q4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Answer
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li value="1"><a href ="#">1 (Strongly Disagree)</a></li>
+              <li value="2"><a href="#">2</a></li>
+              <li value="3"><a href="#">3</a></li>
+              <li value="4"><a href="#">4</a></li>
+              <li value="5"><a href="#">5 (Strongly Agree)</a></li>
+            </ul>
+          </div>
+
+				<h2><strong>Question 5</strong></h2>
+
+					<h3>You find it easy to stay relaxed and focused even when there is some pressure</h3>
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="q5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Answer
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li value="1"><a href ="#">1 (Strongly Disagree)</a></li>
+              <li value="2"><a href="#">2</a></li>
+              <li value="3"><a href="#">3</a></li>
+              <li value="4"><a href="#">4</a></li>
+              <li value="5"><a href="#">5 (Strongly Agree)</a></li>
+            </ul>
+          </div>
+
+				<h2><strong>Question 6</strong></h2>
+
+					<h3>You rarely do something just out of sheer curiosity.</h3>
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="q6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Answer
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li value="1"><a href ="#">1 (Strongly Disagree)</a></li>
+              <li value="2"><a href="#">2</a></li>
+              <li value="3"><a href="#">3</a></li>
+              <li value="4"><a href="#">4</a></li>
+              <li value="5"><a href="#">5 (Strongly Agree)</a></li>
+            </ul>
+          </div>
+
+				<h2><strong>Question 7</strong></h2>
+
+					<h3>It is often difficult for you to relate to other people’s feelings</h3>
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="q7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Answer
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li value="1"><a href ="#">1 (Strongly Disagree)</a></li>
+              <li value="2"><a href="#">2</a></li>
+              <li value="3"><a href="#">3</a></li>
+              <li value="4"><a href="#">4</a></li>
+              <li value="5"><a href="#">5 (Strongly Agree)</a></li>
+            </ul>
+          </div>
+
+				<h2><strong>Question 8</strong></h2>
+
+					<h3>In a discussion, truth should be more important than people’s sensitivities</h3>
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="q8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Answer
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li value="1"><a href ="#">1 (Strongly Disagree)</a></li>
+              <li value="2"><a href="#">2</a></li>
+              <li value="3"><a href="#">3</a></li>
+              <li value="4"><a href="#">4</a></li>
+              <li value="5"><a href="#">5 (Strongly Agree)</a></li>
+            </ul>
+          </div>
+
+				<h2><strong>Question 9</strong></h2>
+
+					<h3>You rarely get carried away by fantasies and ideas.</h3>
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="q9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Answer
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li value="1"><a href ="#">1 (Strongly Disagree)</a></li>
+              <li value="2"><a href="#">2</a></li>
+              <li value="3"><a href="#">3</a></li>
+              <li value="4"><a href="#">4</a></li>
+              <li value="5"><a href="#">5 (Strongly Agree)</a></li>
+            </ul>
+          </div>
+
+				<h2><strong>Question 10</strong></h2>
+
+					<h3>You feel more energetic after spending time with a group of people.</h3>
+
+          <select class="chosen-select" id="q1" style="display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+            <option value="1">5 (Strongly Agree)</option>
+          </select>
+
+          <div class="chosen-container chosen-container-single" style="width: 157px;" title id="q1_chosen">
+            <a class="chosen-single chosen-default">
+              <span>Select Answer</span>
+              <div>
+                <b></b>
+              </div>
+            </a>
+            <div class="chosen-drop">
+              <div class="chosen-search">
+                <input type="text" autocomplete="off">
+              </div>
+              <ul class="chosen-results">
+                <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                <li class="active-result" data-option-array-index="2" style>2 </li>
+                <li class="active-result" data-option-array-index="3" style>3 </li>
+                <li class="active-result" data-option-array-index="4" style>4 </li>
+                <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
+              </ul>
+            </div>
+          </div>
+
+        <hr>
+
+				<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><span class="glyphicon glyphicon-ok-circle"></span> Submit</button>
+			 </div>
+   </div>
+
+   <hr>
+
+  <div class="row">
+    <div class="col-lg-3">
+          <footer class="footer">
+            <p><a href="/api/friends">API Friends List</a> | 
+               <a href="https://github.com/birminghamk/FriendFinder">GitHub Repo</a>
             </p>
-       
+          </footer>
+      </div>
+    </div>
 
-      		</div>
-   		 </div>
-    </div> <!-- END DIV CONTAINER -->
+  <br>
+
+  </div> <!-- END DIV CONTAINER -->
+
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal=dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">x</button>
+          <h2 class="modal-title">
+            <strong>Best Match</strong>
+          </h2>
+        </div>
+        <div class="modal-body">
+            <h2 id="match-name"></h2>
+            <img id="match-img" src="#" alt>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+    
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+      var userData = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+        ]
+      };
+
+      $.post("/api/friends", userData, function(data) {
+      
+        console.log(data);
+        alert("Finding friend...");
+      
+        $("#match-name").text(data.name);
+        $("#match-img").attr("src", data.photo);
+
+        $("#results-modal").modal("toggle");
+
+    });
+  }
+  </script>
 
 </body>
 </html>

@@ -12,11 +12,15 @@ module.exports = function(app) {
     // Create New Characters - takes in JSON input
     app.post("/api/friends", function(req, res) {
 
-      console.log(req.body);
+      for (var i = 0; friendsData.length; i++) {
 
-      friendsData.push(req.body);
+        console.log(req.body);
 
-      res.json(friendsData);
+        friendsData.push(req.body);
+
+      }
+
+      return res.json(friendsData);
     });
 
 } // END EXPORTS FUNCTION

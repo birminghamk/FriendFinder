@@ -15,7 +15,25 @@ var friendsArray = [
 			2,
 			1,
 		]
+	},
+
+	{
+		name: "Nathan",
+		photo: "IMG_1365(1).jpg",
+		scores: [
+			2,
+			5,
+			4,
+			1,
+			1,
+			3,
+			4,
+			2,
+			5,
+			5,
+		]
 	}
+
 
 ];
 

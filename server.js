@@ -5,6 +5,8 @@ var bodyParser = require("body-parser");
 
 // Sets up the Express App
 // =============================================================
+
+// Tells node that we are creating an "express" server
 var app = express();
 
 // Sets an initial port
@@ -12,6 +14,7 @@ var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/JSON
 app.use(bodyParser.json());
 
 //ROUTER
@@ -20,6 +23,8 @@ require("./app/routing/htmlRoutes")(app);
 
 
 //LISTENER
+
+// starts server
 app.listen(PORT, function() {
 	console.log("App listening on PORT: " + PORT);
 });

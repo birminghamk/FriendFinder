@@ -1,5 +1,7 @@
 # FriendFinder
 
+![Demo](https://user-images.githubusercontent.com/30732917/39385627-71b52254-4a2e-11e8-82fa-a097ca4c69a1.gif)
+
 Live Link: https://friendfinder1234.herokuapp.com/ 
 
 ## How it Works

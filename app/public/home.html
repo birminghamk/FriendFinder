@@ -2,41 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder - Express</title>
+  <title>FriendFinder</title>
   <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.jpg"/>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 </head>
+
 <body>
 
   <div class="container">
-    <div class="jumbotron">
-      <h1>
-          FriendFinder
-      </h1>
-      <br>
-      <h3>Answer a few basic questions</h3>
-      <h3>Then find the friend with the greatest compatibility!</h3>
-      <hr>
-      <a href="/survey"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-eye-open"></span>Go to Survey</button></a>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h1 class="homepageHeader">FriendFinder</h1>
+          <br/>
+          <div class="jumbotron-container">
+            <h3>Answer a few basic questions</h3>
+            <h3>Then find the friend with the greatest compatibility!</h3>
+            <p>_________________________________</p>
+          </div>
+          <a href="/survey"><button type="button" class="btn btn-danger btn-lg surveyButton"><span class="glyphicon glyphicon-eye-open"></span>Go to Survey</button></a>
+        </div>
+      </div>
     </div>
 
     <div class="row">
-
-      <div class="col-lg-4">
-          <footer class="footer">
-            <p>
+      <div class="col-md-12">
+            <p class="sourceLinks">
                <a href="/api/friends">API Friends List</a> | 
                <a href="https://github.com/birminghamk/FriendFinder">GitHub Repo</a>
             </p>
-          </footer>
       </div>
     </div>
+
   </div>
 
 </body>
+
 </html>

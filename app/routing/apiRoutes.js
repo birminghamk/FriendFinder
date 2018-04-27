@@ -58,4 +58,4 @@ module.exports = function(app) {
       return res.json(friendMatch);
     });
 
-} // END EXPORTS FUNCTION
+} 

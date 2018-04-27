@@ -2,62 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder - Express</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
-  <style>
-    #match-img {
-        width: 60%;
-        margin-left: 20%;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script> 
 
 </head>
+
 <body>
 
-	<div class="container">
+	<div class="container-survey container-fluid">
 
-		<div class="page-header">
+    <div class="row">
+      <div class="col-md-12">
  			 <h1>Survey Questions</h1>
-		</div>
-    
-    <hr>
+		  </div>
+    </div>
 
-		<div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title"><strong>About You</strong></h3>
+     <hr>
+  
+    <div class="panel ">
+      <div class="panel-heading">
+      </div>
+      <div class="panel-body">
+        <form method="POST" role="form" class="userInfo">
+          <div class="form-group">
+            <label for="name">Name(Required)</label>
+            <input type="text" class="form-control" id="name">
           </div>
-          <div class="panel-body">
-            <form method="POST" role="form">
 
-              <div class="form-group">
-                <label for="name">Name(Required)</label>
-                <input type="text" class="form-control" id="name">
-              </div>
-
-              <div class="form-group">
-                <label for="name">Link to Photo Image(Required)</label>
-                <input type="text" class="form-control" id="photo">
-
-              </div>
-            </form>
-           </div>
+          <div class="form-group">
+            <label for="name">Link to Photo Image(Required)</label>
+            <input type="text" class="form-control" id="photo">
           </div>
+        </form>
+      </div>
+    </div>
+
     <hr>
 
     <div class="row">
-			 <div class="col-lg-12">
+			<div class="col-md-12">
+
 				<h3><strong>Question 1</strong></h3>
 
-					<h4>You rarely do something just out of sheer curiosity.</h4>
+					<h4>You would rather go to the mountains than the beach.</h4>
 
           <div class="dropdown">
             <select class="chosen-select" id="q1">
@@ -69,10 +63,15 @@
               <option value="5">5 (Strongly Agree)</option>
             </select>
           </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
 
 				<h3><strong>Question 2</strong></h3>
 
-					<h4>People can rarely upset you.</h4>
+					<h4>You don't understand why everybody loves <i>The Notebook</i>.</h4>
           
           <div class="dropdown">
             <select class="chosen-select" id="q2">
@@ -84,10 +83,15 @@
               <option value="5">5 (Strongly Agree)</option>
             </select>
           </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
 
 				<h3><strong>Question 3</strong></h3>
 
-					<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+					<h4>You prefer tabs over spaces.</h4>
           
             <div class="dropdown">
             <select class="chosen-select" id="q3">
@@ -99,10 +103,15 @@
               <option value="5">5 (Strongly Agree)</option>
             </select>
           </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
 
 				<h3><strong>Question 4</strong></h3>
 
-					<h4>Generally speaking, you rely more on your experience than your imagination</h4>
+					<h4>You think red velvet cake is overrated (i.e. chocolate cake with red food coloring).</h4>
 
           <div class="dropdown">
             <select class="chosen-select" id="q4">
@@ -114,10 +123,15 @@
               <option value="5">5 (Strongly Agree)</option>
             </select>
           </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
 
 				<h3><strong>Question 5</strong></h3>
 
-					<h4>You find it easy to stay relaxed and focused even when there is some pressure</h4>
+					<h4>You send relatable memes on the regular.</h4>
 
           <div class="dropdown">
             <select class="chosen-select" id="q5">
@@ -129,10 +143,15 @@
               <option value="5">5 (Strongly Agree)</option>
             </select>
           </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
 
 				<h3><strong>Question 6</strong></h3>
 
-					<h4>You rarely do something just out of sheer curiosity.</h4>
+					<h4>You follow people on instagram just to get more followers/likes.</h4>
 
           <div class="dropdown">
             <select class="chosen-select" id="q6">
@@ -144,10 +163,15 @@
               <option value="5">5 (Strongly Agree)</option>
             </select>
           </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
 
 				<h3><strong>Question 7</strong></h3>
 
-					<h4>It is often difficult for you to relate to other people’s feelings</h4>
+					<h4>You can't handle existential conversations.</h4>
 
           <div class="dropdown">
             <select class="chosen-select" id="q7">
@@ -159,10 +183,15 @@
               <option value="5">5 (Strongly Agree)</option>
             </select>
           </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
 
 				<h3><strong>Question 8</strong></h3>
 
-					<h4>In a discussion, truth should be more important than people’s sensitivities</h4>
+					<h4>You are known for either an accent, impression, or one-liner.</h4>
 
           <div class="dropdown">
             <select class="chosen-select" id="q8">
@@ -174,10 +203,15 @@
               <option value="5">5 (Strongly Agree)</option>
             </select>
           </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
 
 				<h3><strong>Question 9</strong></h3>
 
-					<h4>You rarely get carried away by fantasies and ideas.</h4>
+					<h4>You appreciate the humor of The Most Interesting Man in the World.</h4>
 
           <div class="dropdown">
             <select class="chosen-select" id="q9">
@@ -190,9 +224,15 @@
             </select>
           </div>
 
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12"">
+
 				<h3><strong>Question 10</strong></h3>
 
-					<h4>You feel more energetic after spending time with a group of people.</h4>
+					<h4>You know where the line "Don't even trip, dawg" is from. (hint:cartoon)</h4>
 
           <div class="dropdown">
             <select class="chosen-select" id="q10">
@@ -205,25 +245,29 @@
             </select>
           </div>      
 
-        <hr>
-
-				<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
-			 </div>
-   </div>
-
-   <hr>
-
-  <div class="row">
-    <div class="col-lg-4">
-          <footer class="footer">
-            <p><a href="/api/friends">API Friends List</a> | 
-               <a href="https://github.com/birminghamk/FriendFinder">GitHub Repo</a>
-            </p>
-          </footer>
       </div>
     </div>
 
-  </div> <!-- END DIV CONTAINER -->
+     <hr>
+
+    <div class="row">
+      <div class="col-md-12">
+				<button type="submit" class="btn btn-lg submitButton" id="submit">Submit</button>
+		  </div>
+     </div>
+
+     <hr>
+
+  <div class="row">
+    <div class="col-md-offset-4 col-md-4 col-md-offset-4">
+      <p class="sourceLinks">
+        <a href="/api/friends">API Friends List</a> | 
+         <a href="https://github.com/birminghamk/FriendFinder">GitHub Repo</a>
+      </p>
+    </div>
+  </div>
+
+</div> 
 
   <!-- Modal -->
   <div id="results-modal" class="modal fade" role="dialog">
@@ -240,72 +284,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
   </div>
 
-    <script type="text/javascript">
-
-      // Form validation
-      function validateForm() {
-        var isValid = true;
-        $(".form-control").each(function() {
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
-
-        $(".chosen-select").each(function() {
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        })
-        return isValid;
-      }
-
-    // grabs answers from questions
-    $("#submit").on("click", function(event) {
-
-      event.preventDefault();
-
-      // If all required fields are filled
-      if (validateForm()) {
-        // Create an object for the user"s data
-        var userData = {
-          name: $("#name").val().trim(),
-          photo: $("#photo").val().trim(),
-          scores: [
-            $("#q1").val(),
-            $("#q2").val(),
-            $("#q3").val(),
-            $("#q4").val(),
-            $("#q5").val(),
-            $("#q6").val(),
-            $("#q7").val(),
-            $("#q8").val(),
-            $("#q9").val(),
-            $("#q10").val()
-          ]
-        };
-        // AJAX post the data to the friends API.
-        $.ajax({
-          url: "api/friends",
-          method: "POST",
-          contentType: "application/json",
-          data: JSON.stringify(userData)
-        }).then(function(data) {
-          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#match-name").text(data.name);
-          $("#match-img").attr("src", data.photo);
-          $(".modal").modal("show");
-        });
-      } else {
-        alert("Please fill out all fields before submitting!");
-
-      }
-    
-  });
-
-  </script>
+  <script type="text/javascript" src="javascript/app.js"></script>
 
 </body>
 </html>

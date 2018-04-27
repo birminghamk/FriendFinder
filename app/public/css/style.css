@@ -1,0 +1,68 @@
+/*GENERAL*/
+body {
+	font-family: 'Permanent Marker', cursive;
+}
+/*HOME PAGE*/
+.jumbotron {
+	background: url('../images/friends.jpg');
+	background-repeat: round;
+	padding-bottom: 345px;
+	padding-left: 175px;
+	color: white;
+	border: 2px double darkblue;
+	text-align: center;
+}
+.sourceLinks {
+	text-align: center;
+	text-decoration: none;
+	color: darkblue;
+}
+.sourceLinks a {
+	text-decoration: none;
+	color: darkblue;
+}
+span {
+	margin-right: 5px;
+}
+.jumbotron-container {
+	background: rgb(0,0,139, 0.4);
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 2%;
+}
+/*SURVEY PAGE*/
+#match-img {
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10%;
+}
+.container-survey {
+	text-align: center;
+	background: url('../images/whitebackground.png');
+	margin-left: 5%;
+	margin-right: 5%;
+	color: grey;
+}
+.submitButton {
+	padding-left: 200px;
+	padding-right: 200px;
+	color: darkblue;
+	background-color: rgb(0,0,139, 0.4);
+}
+.submitButton:hover {
+	color: white;
+	background-color: rgb(0,0,139);
+}
+.userInfo {
+	margin-right: 3%;
+}
+.panel {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.panel-heading {
+	background-color: rgb(0,0,139, 0.4);
+}
+strong {
+	color: darkblue;
+}

@@ -32,6 +32,58 @@ var friendsArray = [
 			5,
 			5,
 		]
+	},
+
+	{
+		name: "Carla",
+		photo: "https://www.tugraz.at/typo3temp/pics/e8ada76563.jpg",
+		scores: [
+			3,
+			5,
+			4,
+			1,
+			2,
+			5,
+			3,
+			1,
+			2,
+			3,
+
+		]
+	},
+
+	{
+		name: "Jordan",
+		photo: "https://smashingconf.com/whistler-2014/content/02-speakers/08-zach-leatherman/zach-leatherman.jpg",
+		scores: [
+			3,
+			4,
+			2,
+			5,
+			1,
+			4,
+			5,
+			2,
+			4,
+			3,
+		]
+	},
+
+	{
+		name: "Sarah",
+		photo: "https://media.glamour.com/photos/5a425fd3b6bcee68da9f86f8/master/w_743,c_limit/best-face-oil.png",
+		scores: [
+			4,
+			5,
+			3,
+			2,
+			1,
+			3,
+			2,
+			2,
+			4,
+			5,
+		]
 	}
 
 

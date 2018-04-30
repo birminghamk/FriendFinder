@@ -14,6 +14,8 @@ Click 'Go to Survey' from the home page, which will direct the user to a 10-ques
 	- Bootstrap
 	- Heroku
 	- Node.js
+	- AJAX Calls
+	- JSON
 	- NPM packages:
 		- body-parser
 		- express

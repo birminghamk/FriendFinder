@@ -2,6 +2,7 @@
 body {
 	font-family: 'Permanent Marker', cursive;
 }
+
 /*HOME PAGE*/
 .jumbotron {
 	background: url('../images/friends.jpg');
@@ -30,6 +31,7 @@ span {
 	margin-right: 10%;
 	border-radius: 2%;
 }
+
 /*SURVEY PAGE*/
 #match-img {
     width: 60%;
@@ -69,3 +71,12 @@ strong {
 .modal {
 	text-align: center;
 }
+
+@media screen and (max-width: 500px) {
+	.submitButton {
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+}
+
+
